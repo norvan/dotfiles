@@ -13,3 +13,9 @@ eval "$(pyenv init -)"
 # Java version manager jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Cool coloring of terminal
+# Modify prompt, enable colors, Improve 'ls'
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+#export CLICOLOR=1
+#export LSCOLORS=ExFxBxDxCxegedabagacad
