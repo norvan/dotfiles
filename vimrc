@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
@@ -28,6 +29,9 @@ set mouse=a
 set splitbelow
 set splitright
 set cursorline
+
+" add spell checking and automatic wrapping at the recommended 72 columns to commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " ===================== REMAPS ===================== "
 nnoremap <S-l> :bnext<Enter>

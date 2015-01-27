@@ -14,6 +14,10 @@ eval "$(pyenv init -)"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+# Node Version manager NVM
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 # Cool coloring of terminal
 # Modify prompt, enable colors, Improve 'ls'
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
