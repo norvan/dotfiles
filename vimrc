@@ -13,6 +13,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-haml'
+Plugin 'moll/vim-bbye'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdcommenter'
 Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
@@ -36,6 +40,7 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " ===================== REMAPS ===================== "
 nnoremap <S-l> :bnext<Enter>
 nnoremap <S-h> :bprevious<Enter>
+nnoremap <Leader>w :Bdelete<CR>
 
 " ==== Paste the same thing multiple times ==== "
 xnoremap p pgvy
